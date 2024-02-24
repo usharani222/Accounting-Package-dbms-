@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+</head>
+<body style="background-color: #c28bf9;">
+    
+    <h1 style="margin-left: 45%; font-size: 50px;">Signup</h1>
+    
+    <form action="process-signup.php" method="post" id="signup" novalidate>
+        <div class="container" style="height: 300px;width: 40%;background-color:#975cd2 ;margin-left: 30%; padding: 40px; border-radius: 20px; color: #000;">
+            <div >
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" style="background-color:#c69fec;">
+            </div>
+            
+            <div>
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" style="background-color:#c69fec;">
+            </div>
+            
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"style="background-color:#c69fec;">
+            </div>
+            
+            <div>
+                <label for="password_confirmation">Repeat password</label>
+                <input type="password" id="password_confirmation" name="password_confirmation"style="background-color:#c69fec;"" >
+            </div>
+        </div>
+        <button style="margin-left: 45%; margin-top: 20px; background-color: #9E3FFD;">Sign up</button>
+    </form>
+    
+</body>
+</html>

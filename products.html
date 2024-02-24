@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./products.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="index.html">
+                <section id="transactions">
+                    <h3>Home</h3>
+                </section>
+            </a>
+            <a href="products.html">
+                <section id="products">
+                    <h3>Products</h3>
+                </section>
+            </a>
+            <a href="./customers.html">
+                <section id="customers">
+                    <h3>Customers</h3>
+                </section>
+            </a>
+            <a href="./sales.html">
+                <section id="transactions">
+                    <h3>Sales</h3>
+                </section>
+            </a>
+            <a href="./expenses.html">
+                <section id="transactions">
+                    <h3>Expenses</h3>
+                </section>
+            </a>
+            <a href="">
+                <section id="transactions">
+                    <h3>Payments</h3>
+                </section>
+            </a>
+            <a href="./analysis.html">
+                <section id="transactions">
+                    <h3>Analysis</h3>
+                </section>
+            </a>
+            <button onclick="callNow()">Call Now</button>
+        </div>
+    </header>
+    <main>
+       <div class="container" id="blur">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ProductId </th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>stock</th>
+                  </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>Shoes</td>
+                    <td>footwear</td>
+                    <td>5000</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Shoes</td>
+                    <td>footwear</td>
+                    <td>5000</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Shoes</td>
+                    <td>footwear</td>
+                    <td>5000</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+           </table>
+       </div>
+       <button onclick="toggle()">Add Product</button>
+       <div id="popup">
+        <form>
+            <label for="pname">ProductId:</label><br>
+            <input type="text" id="pname" name="pname"><br>
+            <label for="lname">product Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="category">Category:</label><br>
+            <input type="text" id="text"><br>
+            <label for="price">Price:</label><br>
+            <input type="text" id="price"><br>
+            <label for="stock">Stock:</label><br>
+            <input type="text" id="stock">
+            <button onclick="toggle()">Submit</button>
+        </form>
+    </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./products.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="index.html">
+                <section id="transactions">
+                    <h3>Home</h3>
+                    <!-- Transaction management form and list go here -->
+                </section>
+            </a>
+            <a href="products.html">
+                <section id="products">
+                    <h3>Products</h3>
+                    <!-- Product management form and list go here -->
+                </section>
+            </a>
+            <a href="./customers.html">
+                <section id="customers">
+                    <h3>Customers</h3>
+                </section>
+            </a>
+            <a href="./sales.html">
+                <section id="transactions">
+                    <h3>Sales</h3>
+                </section>
+            </a>
+            <a href="./expenses.html">
+                <section id="transactions">
+                    <h3>Expenses</h3>
+                </section>
+            </a>
+            <a href="./payments.html">
+                <section id="transactions">
+                    <h3>Payments</h3>
+                </section>
+            </a>
+            <a href="./analysis.html">
+                <section id="transactions">
+                    <h3>Analysis</h3>
+                </section>
+            </a>
+            <button onclick="callNow()">Call Now</button>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <form>
+                <label for="pname">ExpenseId:</label><br>
+                <input type="text" id="pname" name="pname"><br>
+                <label for="lname">Date:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="category">Description:</label><br>
+                <input type="text" id="text"><br>
+                <label for="price">Amount:</label><br>
+                <input type="text" id="price"><br>
+                <button>Submit</button>
+            </form> 
+        </div>
+       <table class="table">
+        <tr>
+          <th>ExpensesId </th>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>3-12-23</td>
+            <td>current bill</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>Shoes</td>
+            <td>footwear</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>Shoes</td>
+            <td>footwear</td>
+            <td>5000</td>
+        </tr>
+       </table>
+       <div class="add">
+            <button onclick="hideshow()">Add Product</button>
+       </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
